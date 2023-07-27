@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product Search / Filter</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<div class="row" id="search">
+		<form id="search-form" action="" method="POST" enctype="multipart/form-data">
+			<div class="form-group col-xs-9">
+				<input class="form-control" type="text" placeholder="Search" />
+			</div>
+			<div class="form-group col-xs-3">
+				<button type="submit" class="btn btn-block btn-primary">Search</button>
+			</div>
+		</form>
+	</div>
+	<div class="row" id="filter">
+		<form>
+			<div class="form-group col-sm-3 col-xs-6">
+				<select data-filter="make" class="filter-make filter form-control">
+					<option value="">Select Make By Country</option>
+					<option value="">Show All</option>
+				</select>
+			</div>
+			<div class="form-group col-sm-3 col-xs-6">
+				<select data-filter="model" class="filter-model filter form-control">
+					<option value="">Select Model By City</option>
+					<option value="">Show All</option>
+				</select>
+			</div>
+			<div class="form-group col-sm-3 col-xs-6">
+				<select data-filter="type" class="filter-type filter form-control">
+					<option value="">Select Type By Department</option>
+					<option value="">Show All</option>
+				</select>
+			</div>
+			<div class="form-group col-sm-3 col-xs-6">
+				<select data-filter="price" class="filter-price filter form-control">
+					<option value="">Select Price Range By Hospital</option>
+					<option value="">Show All</option>
+				</select>
+			</div>
+		</form>
+	</div>
+	<div class="row" id="products">
+		
+	</div>
+</div>
+<!-- partial -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
